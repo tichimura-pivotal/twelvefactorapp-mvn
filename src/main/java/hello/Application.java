@@ -5,8 +5,10 @@ import java.util.Arrays;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
-import org.springframework.boot.context.web.SpringBootServletInitializer;
+// deprecated in spring boot 1.4
+//import org.springframework.boot.context.web.SpringBootServletInitializer;
 import org.springframework.boot.builder.SpringApplicationBuilder;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 //import javax.servlet.ServletException;
 
 @SpringBootApplication
