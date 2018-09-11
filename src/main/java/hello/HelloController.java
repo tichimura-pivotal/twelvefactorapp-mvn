@@ -1,6 +1,7 @@
 package hello;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -9,7 +10,7 @@ import org.springframework.core.env.Environment;
 
 @RestController
 public class HelloController implements EnvironmentAware {
-    private static Logger log = Logger.getLogger(HelloController.class);
+    private static Logger log = LogManager.getLogger(HelloController.class);
 	
 	private String name;
 
