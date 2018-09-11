@@ -2,7 +2,9 @@ package hello;
 
 import hello.domain.Greeting;
 import hello.service.GreetingService;
-import org.apache.log4j.Logger;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,7 +17,7 @@ import java.time.Instant;
 
 @RestController
 public class HelloController implements EnvironmentAware {
-    private static Logger log = Logger.getLogger(HelloController.class);
+    private static Logger log = LogManager.getLogger(HelloController.class);
 
     private GreetingService greetingService;
 

@@ -1,10 +1,11 @@
 package hello;
 
-import org.apache.log4j.Logger;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.context.web.SpringBootServletInitializer;
+import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 import org.springframework.context.ApplicationContext;
 
 import java.util.Arrays;
@@ -13,7 +14,7 @@ import java.util.Arrays;
 
 @SpringBootApplication
 public class Application extends SpringBootServletInitializer {
-    private static Logger log = Logger.getLogger(Application.class);
+    private static Logger log = LogManager.getLogger(Application.class);
 	
     @Override
     protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
