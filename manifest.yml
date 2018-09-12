@@ -1,8 +1,8 @@
 ---
 applications:
-- name: hello-spring-one
+- name: hello-spring-two
   memory: 1G
-  path: build/libs/twelvefactor-0.1.0.jar
+  path: target/twelvefactor-0.1.0.jar
   random-route: true
   services:
-   - hellodb
+   - hellodbni
